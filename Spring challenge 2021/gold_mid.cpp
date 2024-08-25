@@ -1,5 +1,4 @@
 /*
-
     Just some move generation logic with a lot of VERY IMPORTANT conditions and with some recursive function to pick best move (only considering 3 moves to find best)
 
     Inspired by: https://forum.codingame.com/t/spring-challenge-2021-feedbacks-strategies/190849/2
