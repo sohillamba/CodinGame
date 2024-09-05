@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shuttle Visualization</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button id="prevGen" disabled>Previous Generation</button>
+    <button id="nextGen">Next Generation</button>
+    <input type="file" id="fileInput">
+    <svg id="shuttle-visualization" width="1400" height="600"></svg>
+    <br>
+    <div class="slider-container">
+        <label for="speed">Animation Speed:</label>
+        <input type="range" id="speed" min="1" max="1000" value="10" step="10">
+    </div>
+    <button id="startAnimation">Start Animation</button>
+    <div id="tooltip"></div>
+
+    <div id="top-fitness-display">
+        <!-- Overall top fitness values will be displayed here -->
+    </div>
+    
+    <script src="visualization.js"></script>
+</body>
+</html>
