@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shuttle Visualization</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation buttons for previous and next generations -->
+    <button id="prevGen" disabled>Previous Generation</button>
+    <button id="nextGen">Next Generation</button>
+    
+    <!-- File input to load the shuttle path data -->
+    <input type="file" id="fileInput">
+
+    <!-- The SVG canvas where the shuttle paths and checkpoints will be visualized -->
+    <svg id="svgCanvas" width="1200" height="675" style="border: 1px solid black;"></svg>
+    
+    <br>
+    
+    <!-- Slider control for adjusting the animation speed -->
+    <div class="slider-container">
+        <label for="speed">Animation Speed:</label>
+        <input type="range" id="speed" min="1" max="1000" value="10" step="10">
+        <!-- <input type="range" id="speed" min="50" max="1000" value="100" step="50"> -->
+    </div>
+
+    <!-- Button to start the animation -->
+    <button id="startAnimation">Start Animation</button>
+
+    <!-- Tooltip container for additional information (if needed) -->
+    <div id="tooltip"></div>
+
+    <!-- Container to display the top 3 overall fitness values -->
+    <div id="topFitnessDisplay">
+        <!-- Overall top fitness values will be dynamically inserted here -->
+    </div>
+    
+    <!-- Link to the external JavaScript file -->
+    <script src="visualization.js"></script>
+</body>
+</html>
