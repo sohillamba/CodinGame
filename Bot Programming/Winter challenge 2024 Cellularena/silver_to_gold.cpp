@@ -1,5 +1,6 @@
 /*
-Silver rank 1 heuristic logic (just below silver boss)
+Gold entry code
+Silver rank 1 heuristic logic, just after that crossed silver.
 */
 
 #include <iostream>
